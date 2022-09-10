@@ -21,7 +21,7 @@ func loop() {
 	}
 
 	giu.SingleWindow().Layout(
-		giu.Plot("").AxisLimits(float64(startx), float64(endx), -2, 2, giu.ConditionOnce).Plots(
+		giu.Plot("sine and cosine plot").AxisLimits(float64(startx), float64(endx), -2, 2, giu.ConditionOnce).Plots(
 			giu.PlotLineXY("sin", xvalues, sinvalues),
 			giu.PlotLineXY("cos", xvalues, cosvalues),
 		),
