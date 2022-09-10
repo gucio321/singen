@@ -46,5 +46,6 @@ func main() {
 			giu.Update()
 		}
 	}()
+
 	wnd.Run(loop)
 }
