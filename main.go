@@ -43,6 +43,7 @@ func main() {
 	go func() {
 		for range time.Tick(100 * time.Millisecond) {
 			xvalues = append(xvalues, xvalues[len(xvalues)-1]+0.03)
+			giu.Update()
 		}
 	}()
 	wnd.Run(loop)
